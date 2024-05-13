@@ -38,7 +38,7 @@ for (let i = 0; i < mobilePhones.length; i++) {
             <h3 class="font-semibold opacity-20"> Camera  : ${mobilePhones[i].camera}</h3>
             <h3 class="font-semibold opacity-20"> Bettrey : ${mobilePhones[i].battery}</h3>
             
-            <h4 class="font-semibold text-xl  mt-5">$${mobilePhones[i].price}</h4>
+            <h4 class="font-semibold text-  mt-5">$${mobilePhones[i].price}</h4>
                 </div></div>
                 <div class=" ml-20">
                 <button onclick="addtocart(${i})" class="w-10 h-10 ml-10 rounded-full shader text-yellow-400"><i class="ri-add-line"></i></button>
