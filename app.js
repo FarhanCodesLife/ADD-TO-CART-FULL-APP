@@ -21,15 +21,40 @@ const mobilePhones = [
     // { name: "Samsung Galaxy S20 FE", price: 699, camera: "Triple 12 MP", battery: "4500 mAh",image:"" }
 ];
 
-let div = document.querySelector('.products')
-for (let i = 0; i < mobilePhones.length; i++) {
 
+const populer = [
+    { name: "iPhone SE (2020)", price: 399, camera: "Single 12 MP", battery: "1821 mAh",image:"https://f.nooncdn.com/p/v1686205657/N41222422A_1.jpg?format=avif&width=240" },
+    { name: "Samsung Galaxy A52", price: 349, camera: "Quad 64 MP", battery: "4500 mAh" ,image:"https://f.nooncdn.com/p/pzsku/Z2837F2C306601735D05EZ/45/_/1686296393/8c51bae3-f784-47f9-a3d1-616ce0e4b97b.jpg?format=avif&width=240"},
+    { name: "Redmi Note 10 Pro", price: 279, camera: "Quad 108 MP", battery: "5020 mAh",image:"https://f.nooncdn.com/p/v1650430888/N52352202A_8.jpg?format=avif&width=240" },
+    { name: "OnePlus Nord 2", price: 399, camera: "Triple 50 MP", battery: "4500 mAh" ,image:"https://f.nooncdn.com/p/pzsku/Z13268985E6CCA1C8B234Z/45/_/1710058803/b51bf28c-3dfb-4374-9ee8-003acc9614be.jpg?format=avif&width=240"},
+  
+] ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.querySelector('.products').innerHTML = div
+let product = document.querySelector('.products')
+
+for (let i = 0; i < mobilePhones.length; i++) {
+  
     // console.log(mobilePhones[i]);
 
-    div.innerHTML += `
+    product.innerHTML += `
     <div class="product w-fit rounded-xl p-2 bg-white">
-    <div class="image w-[12rem] h-[13rem] bg-zinc-200 rounded-xl" url="${mobilePhones[i].image}">
-    <img class="w-full h- object-cover" src="${mobilePhones[i].image}" alt=""></div>
+    <div class="image w-[7rem] justify-center bg-white h-[8rem]  rounded-xl"  >
+    <img class="w-full  h-100 object-cover  ml-10" src="${mobilePhones[i].image}" alt=""></div>
     <div class="data w-full px-2 py-5">
     <div>
         <h1 class="font-semibold text-xl leading-none mt-3 p-2 tracking-tight">${mobilePhones[i].name}</h1>
@@ -52,6 +77,36 @@ for (let i = 0; i < mobilePhones.length; i++) {
 
 
 }
+
+
+
+let popularproduct = document.querySelector('.populars')
+
+// for (let i = 0; i < populer.length; i++) {
+  
+//   // console.log(mobilePhones[i]);
+
+//   popularproduct.innerHTML += `
+
+//   <div class="popular bg-white p-2 rounded-2xl flex items-start gap-3 w-[18rem] flex-shrink-0">
+//   <div class="w-20 h-20 bg-red-500 flex-shrink-0 rounded-2xl border-4 border-white overflow-hidden">
+
+
+//       <img class="w-full h-full object-cover"
+//           src="${populer[i].image}"
+//           alt="">
+//   </div>
+//   <div class="data py-2 w-full">
+//       <h1 class="leading-none font-semibold">${populer[i].name}</h1>
+//       <h4 class="mt-3 font-semibold text-zinc-500">$${populer[i].price}</h4>
+//   </div>
+// </div>
+   
+//           `
+
+
+// }
+
 
 
 
